@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* Light Mode */
+.light-mode {
+  background: #f8f8f8;
+  color: black;
+}
+
+/* Lightbulb Button */
+.lightbulb-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#lightbulb {
+  font-size: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(0.5);
+}
+
+#lightbulb.on {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+  text-shadow: 0 0 15px yellow;
+}
+
+/* Modern Button */
+.open-modal {
+  padding: 14px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(174, 123, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.open-modal:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 25px rgba(174, 123, 255, 1);
+}
+
+/* Light Mode Effects */
+.light-mode .open-modal {
+  background: linear-gradient(135deg, #ffcc33, #ff9933);
+  box-shadow: 0 0 20px rgba(255, 204, 51, 0.8);
+  color: black;
+}
+
+.light-mode .open-modal:hover {
+  box-shadow: 0 0 30px rgba(255, 204, 51, 1);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Card - Glassmorphism */
+.modal-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(0deg);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.true-btn,
+.false-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.true-btn {
+  background: #28a745;
+  color: white;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.8);
+}
+
+.false-btn {
+  background: #dc3545;
+  color: white;
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.8);
+}
+
+.true-btn:hover,
+.false-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Result Screen */
+.result-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.result-icon {
+  font-size: 40px;
+}
+
+/* Smooth Rotation */
+.rotate {
+  transform: rotateY(180deg);
+}
+
+/* Restart Button */
+.restart-btn {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: #ffbb33;
+  color: black;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 187, 51, 0.8);
+}
+
+.restart-btn:hover {
+  background: #ffaa22;
+}

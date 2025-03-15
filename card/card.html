@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Modal with Lightbulb</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- Lightbulb Switch -->
+    <div class="lightbulb-container">
+      <button id="lightbulb">💡</button>
+    </div>
+    <!-- Open Quiz Button -->
+    <button class="open-modal">Open Quiz</button>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay">
+      <div class="modal-card">
+        <button class="close-btn">&times;</button>
+        <h2 class="question-text">Question goes here</h2>
+        <div class="quiz-buttons">
+          <button class="true-btn">True</button>
+          <button class="false-btn">False</button>
+        </div>
+        <p class="question-progress">Question 1 of X</p>
+        <button class="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="card.js"></script>
+
+    <body class="dark-mode"></body>
+  </body>
+</html>

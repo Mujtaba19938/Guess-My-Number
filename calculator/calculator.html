@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch">Dark Mode</label>
+    </div>
+
+    <div class="mode-toggle">
+        <button id="scientific-toggle">Scientific Mode</button>
+    </div>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons basic-buttons">
+            <button>C</button>
+            <button>/</button>
+            <button>*</button>
+            <button>DEL</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="equals">=</button>
+            <button class="zero">0</button>
+            <button>.</button>
+        </div>
+        <div class="buttons scientific-buttons hidden">
+            <button>sin</button>
+            <button>cos</button>
+            <button>tan</button>
+            <button>√</button>
+            <button>log</button>
+            <button>ln</button>
+            <button>x^y</button>
+            <button>π</button>
+            <button>e</button>
+            <button>x²</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
