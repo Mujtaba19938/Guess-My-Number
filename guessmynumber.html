@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="shortcut icon" href="Images/298304.png" type="image/x-icon">
+    <link rel="stylesheet" href="guessmynumber.css">
+    <script src="guessmynumber.js"></script>
+</head>
+<body>
+    <header>
+        <button class="again">Again!</button>
+        <h1>Guess My Number!</h1>
+        <p class="range">(Between 1 and 50)</p>
+    </header>
+
+    <main>
+        <section class="left">
+            <input type="number" class="guess" min="1" max="100" placeholder="?">
+            <button class="check">Check!</button>
+        </section>
+
+        <section class="right">
+            <p class="message">Start guessing...</p>
+            <p class="score-label">🔥 Guesses: <span class="score">5</span></p>
+            <p class="highscore-label">🏅 Highscore: <span class="highscore">0</span></p>
+        </section>
+    </main>
+
+    <div class="popup">
+        <p>💥 You failed! Try again?</p>
+        <button class="retry">Retry</button>
+        <button class="exit">Exit</button>
+    </div>
+</body>
+</html>
